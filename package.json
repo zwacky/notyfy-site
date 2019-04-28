@@ -1,0 +1,23 @@
+{
+  "name": "notyfy-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "http-server ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwacky/notyfy-site.git"
+  },
+  "keywords": [],
+  "author": "Simon Wicki <sim.wicki@gmail.com> (https://twitter.com/zwacky)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zwacky/notyfy-site/issues"
+  },
+  "homepage": "https://github.com/zwacky/notyfy-site#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

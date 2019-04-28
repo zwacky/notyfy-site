@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>NOTYFY — Chrome extension to aggregate notifications in one place</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link rel="manifest" href="site.webmanifest"> -->
+	<link rel="apple-touch-icon" href="assets/bell_128.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Rubik|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/simple-grid.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- <link rel="stylesheet" href="dist/css/main.css"> -->
+
+	<meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+	<!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+	<nav class="container">
+		<div class="navigation">
+			<a href="/" class="navigation__item logo" style="flex-grow: 1;">
+				<img src="assets/bell_128.png" alt="notyfy">
+				<span class="brand" style="font-size: 20px;">NOTYFY</span>
+			</a>
+			<a href="https://twitter.com/zwacky" target=_blank class="navigation__item">
+				Twitter
+			</a>
+			<!-- <div class="navigation__item">
+				<a href="">GitHub</a>
+			</div> -->
+			<div class="navigation__item">
+				<a href="https://chrome.google.com/webstore/detail/jchnjaoenbpjjnfgnfhfljcdfhmpljic/publish-accepted-testers?authuser=0&hl=en" target=_blank class="button button--empty">
+					<img src="assets/chrome_128.png" alt="Chrome" style="height: 18px;">
+					<span style="padding: 0 5px 0 10px;">Chrome Store</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<main class="container main">
+		<div class="main__item right" style="padding-top: 50px;">
+			<img src="assets/screenshot.png" alt="NOTYFY screenshot" class="screenshot" style="width: 100%; margin-bottom: -10%;">
+		</div>
+		<div class="main__item left">
+			<h1>A notification aggregator as a Chrome Extension</h1>
+			<h3>for many online platforms</h3>
+			<a href="#beta-access" class="button button--filled" style="width: 250px; margin-top: 5px; padding: 6px;">
+				<img src="assets/icon-download.png" alt="get beta access" style="height: 30px; margin-right: 10px;">
+				<span style="width: calc(100% - 60px); text-align: center;">GET BETA ACCESS</span>
+			</a>
+		</div>
+	</main>
+
+	<section style="padding: 40px 0; margin-bottom: 100px; position: relative; background-color: #fbb300; color: white; box-shadow: 0 0px 20px 20px white;">
+		
+		<!-- <div class="container">
+			<h2 class="center" style="padding: 30px 0; font-weight: 600;">How it works</h2>
+		</div> -->
+		<div class="container">
+			<div class="row facts">
+				<div class="col-4">
+					<div class="facts__separator"></div>
+					<strong>No login details required</strong>
+					<p>
+						Sensitive data like passwords and cookies are never read or stored. Notyfy sees which of the available platforms you're logged in gets the notifications from them. You will never be asked by Notyfy to login additionally.
+					</p>
+				</div>
+				<div class="col-4">
+					<div class="facts__separator"></div>
+					<strong>Lightweight</strong>
+					<p>
+						Notyfy only requests the needed platforms for notifications without loading images, ads and trackers.
+					</p>
+				</div>
+				<div class="col-4">
+					<div class="facts__separator"></div>
+					<strong>Pro privacy</strong>
+					<p>
+						Data regarding your personal data will never be tracked. Read soon more about this in the privacy section.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="beta-access">
+		<div class="container center" style="padding: 50px 0 150px 0;">
+			<strong>Get beta access</strong>
+			<p>
+				Your mail address will never be shared.
+			</p>
+			<div style="display: flex; justify-content: center; margin-top: 50px;">
+				<input disabled type="email" placeholder="your@email.com" class="input">
+				<button disabled class="button button--input" style="cursor: not-allowed">
+					SIGN UP
+				</button>
+			</div>
+
+			<p>Sign-ups will open shortly.</p>
+		</div>
+	</section>
+	
+</body>
+
+</html>
