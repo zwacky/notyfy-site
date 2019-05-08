@@ -102,6 +102,9 @@ p {
 	font-weight: 600;
 	cursor: pointer;
 }
+input:focus {
+	outline: none;
+}
 .button--empty {
     border: 1px solid rgba(226, 226, 226, 0.8);
 }
