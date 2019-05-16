@@ -87,6 +87,28 @@ p {
 	margin-bottom: 20px;
 }
 
+.platforms {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+.platforms__item {
+	display: flex;
+    justify-content: center;
+	width: 32px;
+	height: 32px;
+	padding: 20px;
+	margin: 20px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+
+.footer {
+	/* background-color: #f7f7f7; */
+    border-top: 1px solid #eaeaea;
+	padding: 20px;
+	font-size: 14px;
+}
+
 .brand {
 	letter-spacing: 3px;
 	font-family: Rubik;
