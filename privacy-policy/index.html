@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Privacy Policy — Notyfy</title>
+	<meta name="description" content="Privacy policy for Notyfy">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="../assets/bell_128.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Rubik|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/simple-grid.css">
+	<link rel="stylesheet" href="../css/main.css">
+
+	<meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+	<!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+	<nav class="container">
+		<div class="navigation">
+			<a href="/" class="navigation__item logo" style="flex-grow: 1;">
+				<img src="../assets/bell_128.png" alt="notyfy">
+				<span class="brand" style="font-size: 20px;">NOTYFY</span>
+			</a>
+			<a href="https://twitter.com/NotyfyApp" target=_blank class="navigation__item">
+				Twitter
+			</a>
+			<div class="navigation__item">
+				<a href="https://chrome.google.com/webstore/detail/jchnjaoenbpjjnfgnfhfljcdfhmpljic/publish-accepted-testers?authuser=0&hl=en"
+					target=_blank class="button button--empty">
+					<img src="../assets/chrome_128.png" alt="Chrome" style="height: 18px;">
+					<span style="padding: 0 5px 0 10px;">Chrome Store</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<section>
+		<div class="container" style="padding: 150px 0;">
+			<div class="row">
+				<div class="col-1">&nbsp;</div>
+				<div class="col-10">
+
+					<h1>Privacy Policy</h1>
+					
+					<h2>§1 Chrome Extension</h2>
+					
+					<h3>§1.1 Chrome Extension Permissions</h3>
+
+					<p>
+							These are the chrome permissions Notyfy needs. I'd like to point out that <code>cookies</code> is not one of them. Notyfy has been built from the ground up to not need to read cookies.
+					</p>
+
+					<table>
+						<tr>
+							<td width="150px">Permission</td>
+							<td>Why</td>
+						</tr>
+						<tr>
+							<td><code>"storage"</code></td>
+							<td>
+								<p>
+									to keep track of your seen notification count and lists. content of notification count and lists is never sent or shared with anyone.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><code>"alarms"</code></td>
+							<td>
+								to check in the background for new notifications.
+							</td>
+						</tr>
+						<tr>
+							<td><code>"activeTab"</code></td>
+							<td>
+								to communicate the notification count back and forth with the list.
+							</td>
+						</tr>
+						<tr>
+							<td><code>platform url</code></td>
+							<td>
+								to check the notification count and lists. Check <a href="https://notyfy.co">notyfy.co</a> to see which platforms are supported.
+							</td>
+						</tr>
+					</table>
+
+					<br><br><br>
+
+					<h3>§1.2 Content Scripts</h3>					
+
+					<p>
+						Content scripts allow chrome extensions to read and make changes to specific websites. This is used to give the user a easier way to read and interact with the notification lists. This means Notyfy is only able to change content on notyfy.co domain.
+					</p>
+
+					<ul>
+						<li>https://notyfy.co/*</li>
+					</ul>
+
+					<br><br><br>
+
+					<h2>§2 Third Party Services</h2>
+
+					<h3>§2.1 Analytics</h3>
+
+					<p>
+						To be able to develop Notyfy in the best and most efficient way possible, we use analytics tools to get a high level, aggregated view of patterns in Notyfy. The following services are used for that. All data used is anonymized and aggregated, and can’t be tied back to you.
+					</p>
+
+					<ul>
+						<li>Google Analytics</li>
+					</ul>
+
+					<br><br><br>
+
+					<h3>§2.2 Advertising</h3>
+
+					<p>
+						On notyfy.co we display ads via third party ad networks. Below is a list of the networks we use.
+					</p>
+
+					<ul>
+						<li>Reach Group (<a href="https://www.reachgroup.com/en/privacy-statement/">privacy policy</a>)</li>
+					</ul>
+
+					<br><br><br>
+
+					
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container" style="display: flex; justify-content: space-between;">
+			<div>
+				Notyfy — <a href="/privacy-policy/">Privacy Policy</a>
+			</div>
+			<div>
+				<a href="https://twitter.com/NotyfyApp" target=_blank>
+					<img src="../assets/logos/twitter.svg" alt="Twitter" style="width: 18px;" />
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139243666-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-139243666-1');
+	</script>
+
+</body>
+
+</html>

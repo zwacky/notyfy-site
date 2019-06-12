@@ -4,6 +4,9 @@ body {
 
 a {
 	text-decoration: none;
+	color: #afafaf;
+}
+nav a {
 	color: inherit;
 }
 
@@ -75,7 +78,7 @@ strong {
 	font-weight: 700;
 	font-size: 20px;
 }
-p {
+td, li, p {
 	font-weight: 300;
     line-height: 22px;
 }
