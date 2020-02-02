@@ -1,276 +1,609 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Notyfy — Chrome extension</title>
+    <meta
+      name="description"
+      content="Chrome extension to aggregate notifications in one place"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-	<meta charset="utf-8">
-	<title>Notyfy — Chrome extension</title>
-	<meta name="description" content="Chrome extension to aggregate notifications in one place">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="apple-touch-icon" href="assets/bell_128.png" />
 
-	<!-- <link rel="manifest" href="site.webmanifest"> -->
-	<link rel="apple-touch-icon" href="assets/bell_128.png">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Rubik|Raleway"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/simple-grid.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="stylesheet" href="dist/css/main.css"> -->
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Rubik|Raleway" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/simple-grid.css">
-	<link rel="stylesheet" href="css/main.css">
-	<!-- <link rel="stylesheet" href="dist/css/main.css"> -->
+    <meta name="theme-color" content="#fafafa" />
+    <meta
+      name="google-site-verification"
+      content="-6UuarPNYFwOjCneC060w19eNuC3xZMsQUb3RPDfwAw"
+    />
 
-	<meta name="theme-color" content="#fafafa">
-	<meta name="google-site-verification" content="-6UuarPNYFwOjCneC060w19eNuC3xZMsQUb3RPDfwAw" />
+    <!-- adsense -->
+    <script
+      async
+      src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8090588384012213",
+        enable_page_level_ads: true
+      });
+    </script>
+  </head>
 
-	<!-- adsense -->
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script>
-		(adsbygoogle = window.adsbygoogle || []).push({
-			google_ad_client: "ca-pub-8090588384012213",
-			enable_page_level_ads: true
-		});
-	</script>
-</head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
 
-<body>
-	<!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-	<nav class="container">
-		<div class="navigation">
-			<a href="/" class="navigation__item logo" style="flex-grow: 1;">
-				<img src="assets/bell_128.png" alt="notyfy">
-				<span class="brand" style="font-size: 20px;">NOTYFY</span>
-			</a>
-			<a href="https://twitter.com/NotyfyApp" target=_blank class="navigation__item">
-				Twitter
-			</a>
-			<!-- <div class="navigation__item">
+    <nav class="container">
+      <div class="navigation">
+        <a href="/" class="navigation__item logo" style="flex-grow: 1;">
+          <img src="assets/bell_128.png" alt="notyfy" />
+          <span class="brand" style="font-size: 20px;">NOTYFY</span>
+        </a>
+        <a
+          href="https://twitter.com/NotyfyApp"
+          target="_blank"
+          class="navigation__item"
+        >
+          Twitter
+        </a>
+        <!-- <div class="navigation__item">
 				<a href="">GitHub</a>
 			</div> -->
-			<div class="navigation__item">
-				<a href="https://chrome.google.com/webstore/detail/notyfy/jchnjaoenbpjjnfgnfhfljcdfhmpljic"
-					target=_blank class="button button--empty">
-					<img src="assets/chrome_128.png" alt="Chrome" style="height: 18px;">
-					<span style="padding: 0 5px 0 10px;">Chrome Store</span>
-				</a>
-			</div>
-		</div>
-	</nav>
+        <div class="navigation__item">
+          <a
+            href="https://chrome.google.com/webstore/detail/notyfy/jchnjaoenbpjjnfgnfhfljcdfhmpljic"
+            target="_blank"
+            class="button button--empty"
+          >
+            <img
+              src="assets/chrome_128.png"
+              alt="Chrome"
+              style="height: 18px;"
+            />
+            <span style="padding: 0 5px 0 10px;">Chrome Store</span>
+          </a>
+        </div>
+      </div>
+    </nav>
 
-	<main class="container main">
-		<div class="main__item right" style="width: 60%;">
-			<img src="assets/screenshot-2-1280.png" alt="NOTYFY screenshot" class="screenshot"
-				style="width: 100%; margin-bottom: 10%;">
-		</div>
-		<div class="main__item left" style="width: 40%;">
-			<h1>A notification aggregator as a Chrome Extension</h1>
-			<h3>for many online platforms</h3>
-			<a href="https://chrome.google.com/webstore/detail/notyfy/jchnjaoenbpjjnfgnfhfljcdfhmpljic"
-				class="button button--filled" style="width: 250px; margin-top: 5px; padding: 6px;">
-				<img src="assets/icon-download.png" alt="get beta access" style="height: 30px; margin-right: 10px;">
-				<span style="width: calc(100% - 60px); text-align: center;">GET NOTYFY NOW</span>
-			</a>
-		</div>
-	</main>
+    <main class="container main">
+      <div class="main__item right" style="width: 55%;">
+        <img
+          src="assets/screenshot-4_site.png"
+          alt="NOTYFY screenshot"
+          class="screenshot"
+          style="width: 100%; margin-bottom: 10%;"
+        />
+      </div>
+      <div class="main__item left" style="width: 45%; padding-left: 5%;">
+        <!-- <h1>A notification collector that saves you time to stay focused</h1> -->
+        <!-- <h1>An all-in-one-place notification aggregator</h1> -->
+        <!-- <h1>All your web notifications at a glance</h1> -->
+        <h1>All your web notifications in one place</h1>
+        <!-- <h3>for many online platforms</h3> -->
+        <h3>as a browser extension</h3>
+        <a
+          href="https://chrome.google.com/webstore/detail/notyfy/jchnjaoenbpjjnfgnfhfljcdfhmpljic"
+          class="button button--filled"
+          style="width: 250px; margin-top: 5px; padding: 6px;"
+        >
+          <img
+            src="assets/icon-download.png"
+            alt="get beta access"
+            style="height: 30px; margin-right: 10px;"
+          />
+          <span style="width: calc(100% - 60px); text-align: center;"
+            >GET NOTYFY NOW</span
+          >
+        </a>
+      </div>
+    </main>
 
-	<section
-		style="padding: 40px 0 200px 0; margin-bottom: 100px; position: relative; background-color: #fbb300; color: white; box-shadow: 0 0px 20px 20px white;">
-
-		<!-- <div class="container">
+    <section
+      style="padding: 40px 0 200px 0; margin-bottom: 100px; position: relative; background-color: #fbb300; color: white; box-shadow: 0 0px 20px 20px white;"
+    >
+      <!-- <div class="container">
 			<h2 class="center" style="padding: 30px 0; font-weight: 600;">How it works</h2>
 		</div> -->
-		<div class="container">
-			<div class="row facts">
-				<div class="col-4">
-					<div class="facts__separator"></div>
-					<strong>No login details required</strong>
-					<p>
-						Sensitive data like passwords and cookies are never read or stored. Notyfy sees which of the
-						available platforms you're logged in gets the notifications from them. You will never be asked
-						by Notyfy to login additionally.
-					</p>
-				</div>
-				<div class="col-4">
-					<div class="facts__separator"></div>
-					<strong>Lightweight</strong>
-					<p>
-						Notyfy only requests the needed platforms for notifications without loading images, ads and
-						trackers.
-					</p>
-				</div>
-				<div class="col-4">
+      <div class="container">
+        <div class="row facts">
+          <div class="col-4">
+            <div class="facts__separator"></div>
+            <strong>All in one place</strong>
+            <p>
+              All your notifications across your platforms show up well-arranged
+							in one place. Clicking on the notification will guide you directly to the notifaction's platform and its content.
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="facts__separator"></div>
+            <strong>No login details required</strong>
+            <p>
+              Sensitive data like passwords and cookies are never read or
+              stored. Notyfy sees which of the available platforms you're logged
+              in gets the notifications from them.
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="facts__separator"></div>
+            <strong>Lightweight</strong>
+            <p>
+              Notyfy uses highly optimized checks and saves tons of bandwidth;
+              for instance that means for Facebook it only takes 0,002% of the
+              size of the manual Facebook site check (Notyfy: 0.7kb to 58kb,
+              Browsers: ~25mb).
+            </p>
+          </div>
+          <!-- <div class="col-4">
 					<div class="facts__separator"></div>
 					<strong>Pro privacy</strong>
 					<p>
 						Privacy is important to us. We don't transfer, save or sell your data. Check our <a
 							href="./privacy-policy/" style="color: black;">Privacy Policy</a> for more informations.
 					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+				</div> -->
+        </div>
+      </div>
+    </section>
 
-	<section style="position: relative; top: -200px; margin-bottom: 0px;">
-		<div class="container">
-			<div class="row">
-				<div class="col-1"></div>
-				<div 
-					class="col-10"
-					style="min-height: 300px; background-color: #fff; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);">
+    <section style="position: relative; top: -200px; margin-bottom: 0px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-1"></div>
+          <div
+            class="col-10"
+            style="min-height: 300px; background-color: #fff; border-radius: 10px; box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);"
+          >
+            <div style="padding: 40px;">
+              <h2 style="text-align: center; margin-bottom: 60px;">
+                Supported Platforms
+              </h2>
 
-					<div style="padding: 40px;">
-						<h2 style="text-align: center; margin-bottom: 60px;">Supported Platforms</h2>
+              <table class="table" border="0" cellspacing="0">
+                <tr>
+                  <th style="width: 25px;"></th>
+                  <th></th>
+                  <th>Count</th>
+                  <th>List</th>
+                  <th>Link out</th>
+                  <th
+                    title="Notyfy automatically detects if this platform is logged in and does not need additional login mechanisms."
+                  >
+                    <span style="border-bottom: 1px dashed black; cursor: help;"
+                      >Auto Login</span
+                    >
+                  </th>
+                  <th>Size</th>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="assets/logos/facebook.svg"
+                      alt="Facebook"
+                      title="Facebook"
+                    />
+                  </td>
+                  <td>Facebook</td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>34.8 kb</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="assets/logos/twitter.svg"
+                      alt="Twitter"
+                      title="Twitter"
+                    />
+                  </td>
+                  <td>Twitter<span style=""></span></td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>6 kb</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="assets/logos/reddit.svg"
+                      alt="Reddit"
+                      title="Reddit"
+                    />
+                  </td>
+                  <td>Reddit</td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>34.2 kb</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="assets/logos/google.svg"
+                      alt="Gmail"
+                      title="Gmail"
+                    />
+                  </td>
+                  <td>Gmail</td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>0.7 kb</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="assets/logos/medium.svg"
+                      alt="Medium"
+                      title="Medium"
+                    />
+                  </td>
+                  <td>Medium</td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>9.5 kb</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="assets/logos/stack-overflow.svg"
+                      alt="StackOverflow"
+                      title="StackOverflow"
+                    />
+                  </td>
+                  <td>StackOverflow</td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>17.2 kb</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="assets/logos/quora.svg"
+                      alt="Quora"
+                      title="Quora"
+                    />
+                  </td>
+                  <td>Quora</td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>40.9 kb</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="assets/logos/linkedin.svg"
+                      alt="LinkedIn"
+                      title="LinkedIn"
+                    />
+                  </td>
+                  <td>LinkedIn</td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>37.2 kb</td>
+                </tr>
+                <tr>
+                  <td>
+                    <img
+                      src="assets/logos/github.svg"
+                      alt="GitHub"
+                      title="GitHub"
+                    />
+                  </td>
+                  <td>GitHub</td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>
+                    <img
+                      style="height: 18px;"
+                      src="assets/check-circle.svg"
+                      alt="check"
+                    />
+                  </td>
+                  <td>30+ kb</td>
+                </tr>
+              </table>
 
-						<table class="table" border=0 cellspacing=0>
-							<tr>
-								<th style="width: 25px;"></th>
-								<th></th>
-								<th>Count</th>
-								<th>List</th>
-								<th>Link out</th>
-								<th>Size</th>
-							</tr>
-							<tr>
-								<td>
-									<img src="assets/logos/facebook.svg" alt="Facebook" title="Facebook" />
-								</td>
-								<td>Facebook</td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td>34.8 kb</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="assets/logos/twitter.svg" alt="Twitter" title="Twitter" />
-								</td>
-								<td>Twitter<span style=""></span></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td>6 kb</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="assets/logos/reddit.svg" alt="Reddit" title="Reddit" />
-								</td>
-								<td>Reddit</td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td>34.2 kb</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="assets/logos/google.svg" alt="Gmail" title="Gmail" />
-								</td>
-								<td>Gmail</td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td>0.7 kb</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="assets/logos/medium.svg" alt="Medium" title="Medium" />
-								</td>
-								<td>Medium</td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td>9.5 kb</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="assets/logos/stack-overflow.svg" alt="StackOverflow" title="StackOverflow" />
-								</td>
-								<td>StackOverflow</td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td>17.2 kb</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="assets/logos/quora.svg" alt="Quora" title="Quora" />
-								</td>
-								<td>Quora</td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td>40.9 kb</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="assets/logos/linkedin.svg" alt="LinkedIn" title="LinkedIn" />
-								</td>
-								<td>LinkedIn</td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td>37.2 kb</td>
-							</tr>
-							<tr>
-								<td>
-									<img src="assets/logos/github.svg" alt="GitHub" title="GitHub" />
-								</td>
-								<td>GitHub</td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td><img style="height: 18px;" src="assets/check-circle.svg" alt="check" /></td>
-								<td>30+ kb</td>
-							</tr>
-						</table>
-
-						<!-- <div style="margin-top: 40px; font-size: 14px; opacity: 0.4;">
+              <!-- <div style="margin-top: 40px; font-size: 14px; opacity: 0.4;">
 							* Requires a one time login inside the chrome extension due to limitations.
 						</div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<section style="margin-bottom: 200px;">
-		<div class="container">
-			<h2 style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h2>
+    <section style="margin-bottom: 200px;">
+      <div class="container">
+        <h2 style="text-align: center; margin-bottom: 40px;">
+          Frequently Asked Questions
+        </h2>
 
-			<div class="row">
-				<div class="col-6">
-					<h4>How does Notyfy work?</h4>
-					<p>
-						Notyfy will periodically check for notifications of platforms that you are logged in to. 
-						Since this request is coming from the Chrome Extension through your browser, the requests will be identified as you and is able to check your notifications on your platforms.
-					</p>
-					<p>
-						The requests are super lightweight (from 0.7kb to 58kb) compared to, for instance, the ~25 mb Facebook page load.
-					</p>
-				</div>
-				
-				<div class="col-6">
-					<h4>Does Notyfy store anything of me?</h4>
-					<p>
-						Nothing is stored on servers. The only thing being locally stored for caching purposes are your notifications for a faster loading time.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6">
-					<h4>Can Notyfy read my Cookies?</h4>
-					<p>
-						No, the cookie permission is not required.
-					</p>
-				</div>
-				<div class="col-6">
-					<h4>Is Notyfy available for Firefox?</h4>
-					<p>
-						Yes, it's available here: <a href="https://addons.mozilla.org/en-US/firefox/addon/notyfy/">Firefox Add-on</a>
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="row">
+          <div class="col-6">
+            <h4>How does Notyfy work?</h4>
+            <p>
+              Notyfy will periodically check for notifications of platforms that
+              you are logged in to. Since this request is coming from the Chrome
+              Extension through your browser, the requests will be identified as
+              you and is able to check your notifications on your platforms.
+            </p>
+            <p>
+              The requests are super lightweight (from 0.7kb to 58kb) compared
+              to, for instance, the ~25 mb Facebook page load.
+            </p>
+          </div>
 
-	<!-- <section>
+          <div class="col-6">
+            <h4>Does Notyfy store anything of me?</h4>
+            <p>
+              Nothing is stored on servers. The only thing being locally stored
+              for caching purposes are your notifications for a faster loading
+              time.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <h4>Can Notyfy read my Cookies?</h4>
+            <p>
+              No, the cookie permission is not required.
+            </p>
+          </div>
+          <div class="col-6">
+            <h4>Is Notyfy available for Firefox?</h4>
+            <p>
+              Yes, it's available here:
+              <a href="https://addons.mozilla.org/en-US/firefox/addon/notyfy/"
+                >Firefox Add-on</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section>
 		<div class="container center" style="padding-bottom: 150px;">
 			<h2>Supported Platforms</h2>
 
@@ -306,7 +639,7 @@
 		</div>
 	</section> -->
 
-	<!--
+    <!--
 	<section id="beta-access">
 		<div class="container center" style="padding: 50px 0 150px 0;">
 			<strong>Get beta access</strong>
@@ -333,29 +666,37 @@
 	</section>
 	-->
 
-	<footer class="footer">
-		<div class="container" style="display: flex; justify-content: space-between;">
-			<div>
-				Notyfy — <a href="/privacy-policy/">Privacy Policy</a>
-			</div>
-			<div>
-				<a href="https://twitter.com/NotyfyApp" target=_blank>
-					<img src="assets/logos/twitter.svg" alt="Twitter" style="width: 18px;" />
-				</a>
-			</div>
-		</div>
-	</footer>
+    <footer class="footer">
+      <div
+        class="container"
+        style="display: flex; justify-content: space-between;"
+      >
+        <div>Notyfy — <a href="/privacy-policy/">Privacy Policy</a></div>
+        <div>
+          <a href="https://twitter.com/NotyfyApp" target="_blank">
+            <img
+              src="assets/logos/twitter.svg"
+              alt="Twitter"
+              style="width: 18px;"
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139243666-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-139243666-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-		gtag('config', 'UA-139243666-1');
-	</script>
-
-</body>
-
+      gtag("config", "UA-139243666-1");
+    </script>
+  </body>
 </html>
