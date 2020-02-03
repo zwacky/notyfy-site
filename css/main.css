@@ -204,6 +204,11 @@ input:focus {
 .button--input:hover {
 	opacity: 0.8;
 }
+.button--icon-only {
+	padding-left: 20px;
+	filter: grayscale(1);
+	opacity: 0.5;
+}
 
 .input {
 	padding: 10px 10px 10px 20px;
