@@ -20,6 +20,6 @@
   "devDependencies": {
     "http-server": "^0.11.1",
     "ecstatic": ">=3.3.2",
-    "minimist": ">=1.2.2"
+    "minimist": ">=1.2.6"
   }
 }
